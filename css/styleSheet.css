@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.page {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 50px auto 20px;
+    grid-template-areas: 'header header'
+        'nav main'
+        'footer footer';
+}
+
+.navHeader {
+    font-size: 30px;
+    border: 5px solid black;
+}
+
+#header {
+    text-align: center;
+    background-color: lightblue;
+    grid-area: header;
+}
+
+#nav {
+    background-color: lightgray;
+    grid-area: nav;
+    text-align: center;
+    font-size: 20px;
+}
+
+#main {
+    grid-area: main;
+    padding: 40px;
+    margin: 40px;
+    background-image: url(/img/logo.png);
+}
+
+#footer {
+    background-color: lightgray;
+    grid-area: footer;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+.website {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
