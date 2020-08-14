@@ -38,6 +38,8 @@ div.page {
     grid-area: main;
     padding-left: 80px;
     padding-right: 80px;
+    background-image: url("/img/dolphinLogo.png");
+    background-position: right;
 }
 
 main ul {

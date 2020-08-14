@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my website</title>
     <link rel="stylesheet" href="../css/styleSheet.css">
+    </style>
 </head>
 
 <body>
@@ -25,12 +26,23 @@
             </ul>
         </nav>
         <main id="main">
-            <h1>Oppgaver</h1>
-            <br>
-            <ul>
-                <li><a href="../oppgaver/Snømann.html">Snømann</a></li>
-                <li><a href="../oppgaver/quiz.html">quiz</a></li>
-            </ul>
+
+            <h2 id="question">hva er verdens høyeste fjell?</h2>
+            <button id="alt1" onclick="riktigSvar()">Mount Everest</button>
+            <button id="alt2" onclick="feilSvar()">Mount Saint</button>
+            <button id="alt3" onclick="feilSvar()">Mount Holy</button>
+            <h2 id="riktigSvar"></h2>
+
+            <script>
+                function riktigSvar() {
+                    document.getElementById('riktigSvar').innerHTML = "Riktig svar er: Mount Everest!";
+                }
+
+                function feilSvar() {
+                    document.getElementById('riktigSvar').innerHTML = "Feil! prøv igjen!";
+                }
+            </script>
+
         </main>
         <footer id="footer">
             <div>Copyright 2020 by <a href="../Htmlpage/index.html">MY WEBSITE</a> &copy;</div>
