@@ -17,6 +17,9 @@ div.page {
     text-align: center;
     background-color: lightblue;
     grid-area: header;
+    background-image: url("/img/dolphinLogo.png");
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 #nav {
@@ -38,9 +41,6 @@ div.page {
     grid-area: main;
     padding-left: 80px;
     padding-right: 80px;
-    background-image: url("/img/dolphinLogo.png");
-    background-repeat: no-repeat;
-    background-position: right;
 }
 
 main ul {
