@@ -39,6 +39,7 @@ div.page {
     padding-left: 80px;
     padding-right: 80px;
     background-image: url("/img/dolphinLogo.png");
+    background-repeat: no-repeat;
     background-position: right;
 }
 
