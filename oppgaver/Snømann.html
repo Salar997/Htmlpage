@@ -6,13 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my website</title>
     <link rel="stylesheet" href="../css/styleSheet.css">
+    <style>
+        div.snowmann {
+            text-align: center;
+        }
+
+        svg.snowman {
+            background-color: lightgrey;
+        }
+
+        circle.white {
+            stroke: black;
+            stroke-width: 3px;
+        }
+    </style>
 </head>
 
 <body>
     <div class="page">
         <header id="header">
             <h1 class="website"><a href="../index.html">My Website</a></h1>
-            <img src="../img/dolphinLogo.png" alt="" style="float: right;">
+            <!--<img src="../img/dolphinLogo.png" alt="" style="float: right;">-->
         </header>
         <nav id="nav">
             <h3 class="navHeader"><strong>Navigation</strong></h3>
@@ -27,16 +41,24 @@
         </nav>
         <main id="main">
 
-            <div class="snømann">
+            <div class="snowmann">
                 <h1>Snømann</h1>
                 <hr>
                 <br>
-                <p>under progress...</p>
                 <br>
-                <svg height="100" width="100" viewbox="0 0 100 100">
-                    <rect width="500" height="500" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
-                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="white" />
+
+                <svg class="snowman" width="800" height="800" background-color="lightblue">
+                    <circle class="white" cx="400" cy="190" r="80" fill="white" />
+                    <circle class="white" cx="400" cy="360" r="110" fill="white" />
+                    <circle class="white" cx="400" cy="600" r="150" fill="white" />
+
+                    <!-- ansiktet -->
+                    <circle class="white" cx="370" cy="170" r="10" fill="black" />
+                    <circle class="white" cx="430" cy="170" r="10" fill="black" />
+
+                    Nettleseren støtter ikke svg!
                 </svg>
+
 
             </div>
 
